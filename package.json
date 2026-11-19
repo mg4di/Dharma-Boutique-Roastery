@@ -9,10 +9,11 @@
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "pinia": "latest",
     "vite": "latest",
     "vue": "latest",
-    "vue-router": "latest",
-    "pinia": "latest"
+    "vue-router": "latest"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "latest"

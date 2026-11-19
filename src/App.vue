@@ -36,8 +36,8 @@ function subscribe(event) {
 
 <template>
   <div class="site-shell">
-    <div class="demo-strip"><span class="demo-dot"></span> Katalog demo · Kopi Indonesia, disangrai dalam batch kecil <span>Setiap pesanan adalah simulasi</span></div>
-    <header class="site-header">
+    <div class="demo-strip" data-aos="fade-down"><span class="demo-dot"></span> Katalog demo · Kopi Indonesia, disangrai dalam batch kecil <span>Setiap pesanan adalah simulasi</span></div>
+    <header class="site-header" data-aos="fade-down" data-aos-delay="50">
       <button class="mobile-menu" aria-label="Buka menu" @click="menuOpen = !menuOpen"><span></span><span></span></button>
       <RouterLink to="/" class="brand" aria-label="Dharma Roastery beranda">
         <span class="brand-mark"><svg viewBox="0 0 38 38" aria-hidden="true"><path d="M19 3C10 7 6 14 8 23c2 8 8 12 17 10 8-2 12-9 9-17C32 8 27 4 19 3Z"/><path d="M13 26c5-6 10-10 17-14M13 17c5 1 9 5 12 11"/></svg></span>

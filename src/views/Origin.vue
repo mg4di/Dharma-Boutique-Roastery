@@ -27,7 +27,7 @@ const otherOrigins = computed(() => origins.filter((item) => item.slug !== route
       <span class="origin-hero-coordinate">{{ origin.province.toUpperCase() }} · PETA ILUSTRATIF</span>
     </section>
 
-    <section class="origin-story">
+    <section class="origin-story" data-aos="fade-up">
       <div class="origin-story-heading"><span class="section-index">CERITA SEBUAH TEMPAT</span><h2>Dari tanah,<br /><em>menuju cangkir.</em></h2></div>
       <div class="origin-story-copy"><p>{{ origin.description }}</p><div class="origin-flavor-notes"><span>CONTOH CATATAN RASA</span><div><i v-for="note in origin.notes" :key="note">{{ note }}</i></div></div></div>
     </section>
@@ -45,7 +45,7 @@ const otherOrigins = computed(() => origins.filter((item) => item.slug !== route
       <p class="origin-demo-disclaimer">Semua nama kopi, harga, foto, elevasi, dan catatan rasa pada halaman ini adalah materi contoh untuk demo frontend—bukan data bisnis atau informasi panen yang telah diverifikasi.</p>
     </section>
 
-    <section class="other-origins"><div class="section-heading"><div><span class="section-index">PERJALANAN DILANJUTKAN</span><h2>Jelajahi origin <em>lainnya.</em></h2></div><RouterLink to="/shop" class="text-link">Semua kopi <span>↗</span></RouterLink></div><div class="other-origin-links"><RouterLink v-for="item in otherOrigins" :key="item.slug" :to="`/origin/${item.slug}`"><span>{{ item.region }}</span><b>{{ item.name }}</b><i>↗</i></RouterLink></div></section>
+    <section class="other-origins"><div class="section-heading" data-aos="fade-up"><div><span class="section-index">PERJALANAN DILANJUTKAN</span><h2>Jelajahi origin <em>lainnya.</em></h2></div><RouterLink to="/shop" class="text-link">Semua kopi <span>↗</span></RouterLink></div><div class="other-origin-links"><RouterLink v-for="item in otherOrigins" :key="item.slug" :to="`/origin/${item.slug}`"><span>{{ item.region }}</span><b>{{ item.name }}</b><i>↗</i></RouterLink></div></section>
   </div>
   <div v-else class="not-found"><span>✳</span><span class="section-index">ORIGIN TIDAK DITEMUKAN</span><h1>Belum ada catatan<br /><em>untuk tempat ini.</em></h1><p>Pilih origin lain dari katalog kopi Indonesia.</p><RouterLink to="/shop" class="button button-dark">Jelajahi kopi <span>↗</span></RouterLink></div>
 </template>
