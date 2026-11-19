@@ -48,9 +48,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .origin-hero .button-coral { color: var(--paper); }
 
 .button-coral { background: var(--roast); color: var(--paper); }
-.button-coral:hover { background: var(--roast-deep); }
+.button.button-coral:hover { background: var(--roast-deep); color: var(--paper); }
 .button-dark { background: var(--roast-deep); color: var(--paper); }
-.button-dark:hover { background: var(--roast); }
+.button.button-dark:hover { background: var(--roast); color: var(--paper); }
+.button.button-outline { transition: transform .25s var(--ease), background .25s, color .25s, border-color .25s; }
+.button.button-outline:hover { background: var(--roast-deep); border-color: var(--roast-deep); color: var(--paper); }
 .text-link { color: var(--roast-deep); border-color: var(--roast); }
 .text-link span { color: var(--roast); }
 
