@@ -3,6 +3,7 @@ import { computed, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { useCartStore } from './stores/cart'
 import { formatIDR, products } from './data/products'
+import { origins } from './data/origins'
 
 const cart = useCartStore()
 const route = useRoute()
@@ -10,7 +11,10 @@ const menuOpen = ref(false)
 const cartOpen = ref(false)
 const cartProducts = computed(() => cart.items.map((item, index) => ({ ...item, index, product: products.find((product) => product.id === item.productId) })).filter((item) => item.product))
 watch(() => route.fullPath, () => { menuOpen.value = false; cartOpen.value = false })
-watch(() => route.meta.title, (title) => { document.title = title || 'Dharma Roastery' }, { immediate: true })
+watch(() => route.fullPath, () => {
+  const origin = origins.find((item) => item.slug === route.params.slug)
+  document.title = origin ? `${origin.name} Coffee Origin — Dharma Roastery` : route.meta.title || 'Dharma Roastery'
+}, { immediate: true })
 
 function updateQty(index, qty) { cart.setQty(index, qty) }
 function format(value) { return formatIDR(value) }
