@@ -1,18 +1,25 @@
 <script setup>
 import { computed, ref } from 'vue'
-import { RouterLink, useRouter } from 'vue-router'
+import { RouterLink, useRoute, useRouter } from 'vue-router'
 import { products, formatIDR } from '../data/products'
 import { origins } from '../data/origins'
 import { useCartStore } from '../stores/cart'
 
 const cart = useCartStore()
 const router = useRouter()
+const route = useRoute()
 const featured = products.filter((product) => product.featured)
 const selected = ref(featured[1])
 const activeRegion = ref('Semua')
 const regions = ['Semua','Sumatra','Bali','Sulawesi','Flores','Jawa']
 const regionProducts = computed(() => activeRegion.value === 'Semua' ? featured : products.filter((product) => product.region === activeRegion.value))
-
+function goToOrigins() {
+  if (route.path !== '/') {
+    router.push({ path: '/', hash: '#origin' })
+    return
+  }
+  document.getElementById('origin')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 </script>
 
 <template>
@@ -23,13 +30,11 @@ const regionProducts = computed(() => activeRegion.value === 'Semua' ? featured 
           <span class="hero-wordmark">DHARMA <i>·</i> BOUTIQUE ROASTERY</span>
           <h1 id="hero-title">Kopi lokal.<br/>Diracik dengan <em>niat.</em></h1>
           <p>Kami merayakan kekayaan kopi Indonesia lewat sangrai yang cermat dan cerita yang layak dibagikan—dari kebun, sampai ke cangkir kamu.</p>
-          <div class="hero-brand-actions"><RouterLink to="/shop" class="button button-coral">Jelajahi kopi <span>↗</span></RouterLink><RouterLink to="/#origin" class="hero-origin-link">Kenali asalnya <span>↓</span></RouterLink></div>
+          <div class="hero-brand-actions"><RouterLink to="/shop" class="button button-coral">Jelajahi kopi <span>↗</span></RouterLink><a href="/#origin" class="hero-origin-link" @click.prevent="goToOrigins">Kenali asalnya <span>↓</span></a></div>
           <div class="hero-brand-note"><span><i></i> DISANGRAI DALAM BATCH KECIL</span><span>100% CERITA KOPI INDONESIA</span></div>
         </div>
         <div class="hero-brand-visual">
-          <img :src="selected.image" :alt="`Kopi pilihan demo ${selected.name} dari ${selected.origin}`" fetchpriority="high" />
-          <div class="hero-image-caption"><span>SEBUAH CERITA DARI {{ selected.region.toUpperCase() }}</span><span>FOTO ILUSTRASI</span></div>
-          <RouterLink :to="`/product/${selected.id}`" class="hero-featured-product"><span>PILIHAN UNTUK DIKENAL</span><b>{{ selected.name }}</b><small>{{ selected.origin }} <i>·</i> {{ selected.tasting.slice(0,2).join(' · ') }}</small><strong>{{ formatIDR(selected.price) }} <i>/ 250g</i><span>↗</span></strong></RouterLink>
+          <img src="/assets/dharma-kintamani-coffee.svg" alt="Ilustrasi kemasan kopi Kintamani Citrus Dharma Boutique Roastery" fetchpriority="high" />
         </div>
       </div>
       <div class="hero-brand-footer"><span>MENEMUKAN YANG BAIK, DARI DEKAT.</span><a href="#origin">JELAJAHI ASAL KOPI <b>↓</b></a><span>ROASTED WITH CARE · INDONESIA</span></div>

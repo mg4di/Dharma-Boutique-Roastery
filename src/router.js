@@ -11,7 +11,9 @@ import Origin from './views/Origin.vue'
 
 export default createRouter({
   history: createWebHistory(),
-  scrollBehavior: () => ({ top: 0, behavior: 'smooth' }),
+  scrollBehavior: (to) => to.hash
+    ? { el: to.hash, behavior: 'smooth' }
+    : { top: 0, behavior: 'smooth' },
   routes: [
     { path: '/', component: Home, meta: { title: 'Dharma Roastery — Kopi Lokal Indonesia' } },
     { path: '/shop', component: Shop, meta: { title: 'Jelajahi Kopi — Dharma Roastery' } },

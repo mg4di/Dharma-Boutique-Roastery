@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="760" viewBox="0 0 760 760" fill="none">
+  <defs>
+    <linearGradient id="pouch" x1="205" y1="91" x2="574" y2="667" gradientUnits="userSpaceOnUse"><stop stop-color="#F4E9D5"/><stop offset=".48" stop-color="#E6D6B9"/><stop offset="1" stop-color="#C7B18D"/></linearGradient>
+    <linearGradient id="side" x1="520" y1="200" x2="584" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#B8A17F" stop-opacity=".18"/><stop offset="1" stop-color="#513F2E" stop-opacity=".28"/></linearGradient>
+    <linearGradient id="shine" x1="221" y1="220" x2="316" y2="550" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity=".5"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+    <linearGradient id="coffee" x1="349" y1="461" x2="444" y2="564" gradientUnits="userSpaceOnUse"><stop stop-color="#E9C56F"/><stop offset="1" stop-color="#CB8650"/></linearGradient>
+    <filter id="shadow" x="123" y="79" width="544" height="654" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .09"/></feComponentTransfer></filter>
+  </defs>
+  <ellipse cx="394" cy="660" rx="204" ry="28" fill="#071812" fill-opacity=".48" filter="url(#shadow)"/>
+  <g transform="rotate(-2 380 380)">
+    <path d="M222 116 534 116 571 625Q573 649 549 653L203 653Q181 650 184 628L215 137Q216 120 222 116Z" fill="url(#pouch)" stroke="#F4EAD9" stroke-opacity=".58" stroke-width="3"/>
+    <path d="M534 117 571 625Q573 649 549 653L511 651 491 117Z" fill="url(#side)"/>
+    <path d="M222 116 534 116 537 148 220 148Z" fill="#D2C0A0" fill-opacity=".55"/>
+    <path d="M220 138 537 138M222 153 539 153" stroke="#837253" stroke-opacity=".46" stroke-width="2"/>
+    <path d="M221 165 526 165 546 625 202 625Z" fill="url(#shine)"/>
+    <path d="M204 606 548 606" stroke="#6E6048" stroke-opacity=".48" stroke-width="2"/>
+    <g fill="#173C32">
+      <text x="258" y="243" font-family="Georgia,serif" font-size="62" font-weight="bold" letter-spacing="-5">dharma</text>
+      <text x="263" y="267" font-family="Arial,sans-serif" font-size="10" font-weight="bold" letter-spacing="4">BOUTIQUE ROASTERY</text>
+      <text x="260" y="334" font-family="Arial,sans-serif" font-size="13" letter-spacing="4" fill="#8A7451">BALI · INDONESIA</text>
+      <text x="256" y="379" font-family="Georgia,serif" font-size="37" letter-spacing="-1">Kintamani</text>
+      <text x="258" y="418" font-family="Georgia,serif" font-size="37" letter-spacing="-1">Citrus</text>
+    </g>
+    <path d="M257 441 497 441" stroke="#476450" stroke-opacity=".45"/>
+    <text x="260" y="467" font-family="Arial,sans-serif" font-size="10" letter-spacing="3" fill="#6E7156">WASHED · LIGHT-MEDIUM ROAST</text>
+    <g transform="translate(377 536)">
+      <circle r="65" stroke="#49634C" stroke-opacity=".54" stroke-width="2"/>
+      <circle r="51" stroke="#49634C" stroke-opacity=".38" stroke-width="1.5"/>
+      <circle r="36" stroke="#49634C" stroke-opacity=".34" stroke-dasharray="3 5"/>
+      <path d="M0-27C16-10 26 1 18 15 9 32-13 30-22 13-30-3-12-18 0-27Z" fill="url(#coffee)"/>
+      <path d="M-17 23 20-17" stroke="#654A32" stroke-opacity=".55" stroke-width="2"/>
+      <circle cx="-48" cy="-5" r="4" fill="#617354"/><circle cx="46" cy="-29" r="4" fill="#BA7750"/><circle cx="27" cy="48" r="4" fill="#A95F47"/>
+    </g>
+    <text x="228" y="587" font-family="Arial,sans-serif" font-size="10" letter-spacing="3" fill="#55634C">FRESHLY ROASTED</text>
+    <text x="477" y="587" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#55634C">250 G</text>
+  </g>
+  <rect width="760" height="760" filter="url(#grain)" opacity=".5"/>
+</svg>
