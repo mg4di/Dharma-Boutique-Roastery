@@ -1,0 +1,138 @@
+/* Dharma warm roast palette: #FFF0D1, #795757, #664343, #3B3030 */
+:root {
+  --ink: #3B3030;
+  --forest: #664343;
+  --forest-deep: #3B3030;
+  --paper: #FFF0D1;
+  --paper-light: #FBF5E8;
+  --paper-warm: #F4E4C5;
+  --roast: #795757;
+  --roast-deep: #664343;
+  --line: rgba(59, 48, 48, .2);
+  --coral: #795757;
+  --yellow: #FFF0D1;
+  --muted: #664343;
+}
+
+body { background: var(--paper); color: var(--ink); }
+::selection { background: var(--roast); color: var(--paper); }
+a:hover { color: var(--roast-deep); }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline-color: var(--roast); }
+
+.demo-strip { background: var(--paper-warm); color: var(--roast-deep); }
+.demo-strip span:last-child { color: var(--roast-deep); }
+.site-header { background: var(--paper-light); border-color: var(--line); }
+.brand-mark { border-color: rgba(59, 48, 48, .42); }
+.brand-mark svg { stroke: var(--roast-deep); }
+.main-nav { color: var(--roast-deep); }
+.main-nav a:hover, .bag-button b, .icon-button > span { color: var(--roast); }
+.icon-button > span { background: var(--roast); color: var(--paper); }
+.bag-button { border-color: var(--line); }
+
+.hero-scorecard { background: var(--roast-deep); color: var(--paper); }
+.hero-brand-copy h1, .hero-brand-copy h1 em { color: var(--paper); }
+.hero-brand-copy > p { color: var(--paper-warm); }
+.hero-wordmark, .hero-brand-note, .hero-brand-note i, .hero-brand-footer a,
+.hero-brand-footer a b, .hero-brand-footer { color: var(--paper-warm); }
+.hero-brand-note { border-color: rgba(255, 240, 209, .28); }
+.hero-brand-note i { background: var(--paper-warm); }
+.hero-brand-footer { border-color: rgba(255, 240, 209, .28); }
+.hero-origin-link { color: var(--paper-warm); border-color: rgba(255, 240, 209, .45); }
+.hero-origin-link span, .hero-origin-link:hover { color: var(--paper); }
+.hero-brand-visual { background: var(--paper-warm); }
+.origin-hero { background: var(--ink); color: var(--paper); }
+.origin-hero-shade { background: linear-gradient(90deg, rgba(59, 48, 48, .92), rgba(59, 48, 48, .46)), linear-gradient(0deg, rgba(59, 48, 48, .42), transparent 60%); }
+.origin-label, .origin-label i, .origin-hero h1, .origin-hero h1 em,
+.origin-hero-content > p, .origin-hero-content > p span,
+.origin-hero-coordinate { color: var(--paper); }
+.origin-hero .button-coral { color: var(--paper); }
+
+.button-coral { background: var(--roast); color: var(--paper); }
+.button-coral:hover { background: var(--roast-deep); }
+.button-dark { background: var(--roast-deep); color: var(--paper); }
+.button-dark:hover { background: var(--roast); }
+.text-link { color: var(--roast-deep); border-color: var(--roast); }
+.text-link span { color: var(--roast); }
+
+.origin-section, .selection-section, .shop-toolbar, .shop-layout, .cart-page,
+.wishlist-page, .checkout-page, .confirmation-page, .breadcrumbs,
+.product-detail-grid, .origin-products { background-color: var(--paper-light); }
+.section-heading h2, .origin-copy h3, .brew-copy h2, .shop-intro h1,
+.checkout-title h1, .detail-info h1, .cart-title h1, .confirmation-page h1,
+.product-title, .origin-product-name { color: var(--roast-deep); }
+.section-heading h2 em, .origin-copy h3 em, .brew-copy h2 em,
+.shop-intro h1 em, .checkout-title h1 em, .cart-empty h2 em,
+.confirmation-page h1 em, .origin-products .section-heading h2 em,
+.other-origins .section-heading h2 em { color: var(--roast); }
+.section-index, .product-meta, .product-origin, .detail-origin,
+.detail-description, .shop-intro > div:first-child > p,
+.origin-copy > p, .origin-story-copy > p, .origin-flavor-notes > span,
+.origin-product-info > p, .origin-product-method, .demo-disclaimer { color: var(--roast); }
+
+.origin-explorer, .origin-map-panel, .origin-copy, .brew-feature,
+.brew-copy, .other-origins, .related-section, .shop-intro,
+.order-summary, .checkout-summary { background-color: var(--paper-warm); }
+.map-islands path { fill: var(--roast); stroke: var(--roast-deep); }
+.map-islands path:hover { fill: var(--roast-deep); }
+.map-markers circle:first-child { fill: var(--roast); stroke: var(--roast); }
+.map-markers circle:nth-child(2), .legend-pin { fill: var(--roast); background: var(--roast); }
+.map-markers text, .map-caption, .map-topline, .map-legend,
+.map-origin-links > span { fill: var(--roast-deep); color: var(--roast-deep); }
+.map-origin-links a { border-color: rgba(102, 67, 67, .55); color: var(--roast-deep); }
+.map-origin-links a:hover { background: var(--roast-deep); color: var(--paper); }
+.map-legend { border-color: rgba(59, 48, 48, .2); }
+.map-markers g:focus-visible circle:first-child { stroke: var(--ink); }
+
+.product-image-wrap, .detail-image, .origin-product-image { background: var(--paper-warm); }
+.image-origin, .favorite-button { background: rgba(255, 240, 209, .94); color: var(--roast-deep); }
+.product-tag { background: var(--roast-deep); color: var(--paper); }
+.product-notes span { background: var(--paper-warm); color: var(--roast-deep); }
+.product-card-foot button { border-color: rgba(102, 67, 67, .6); color: var(--roast-deep); }
+.product-card-foot button:hover, .taste-filters button.active,
+.taste-filters button:hover { background: var(--roast-deep); border-color: var(--roast-deep); color: var(--paper); }
+.taste-filters button { border-color: rgba(121, 87, 87, .6); color: var(--roast-deep); }
+.taste-filters button span { color: var(--paper-warm); }
+.size-options button { border-color: rgba(121, 87, 87, .55); color: var(--roast-deep); }
+.size-options button.chosen { background: var(--roast-deep); border-color: var(--roast-deep); color: var(--paper); }
+.detail-tags span, .variant-select select { border-color: rgba(121, 87, 87, .5); color: var(--roast-deep); }
+.detail-profile, .detail-facts, .product-card-foot, .cart-line { border-color: var(--line); }
+.profile-track { background: var(--paper-warm); }
+.profile-track i { background: var(--roast); }
+
+.order-summary, .checkout-summary { background: var(--paper-warm); color: var(--ink); }
+.summary-row, .summary-total, .checkout-item { border-color: rgba(59, 48, 48, .28); }
+.summary-row, .summary-row b, .order-summary > p,
+.checkout-block-heading p, .checkout-block label:not(.payment-option),
+.checkout-item span, .checkout-summary .section-index { color: var(--roast-deep); }
+.checkout-block input:not([type=radio]), .checkout-block textarea {
+  border-color: rgba(121, 87, 87, .6);
+  background: var(--paper-light);
+  color: var(--ink);
+}
+.checkout-block input::placeholder, .checkout-block textarea::placeholder { color: var(--roast); }
+.payment-option { border-color: rgba(121, 87, 87, .55); }
+.payment-option:has(input:checked) { border-color: var(--roast-deep); background: var(--paper-warm); }
+.payment-option > input { accent-color: var(--roast-deep); }
+.payment-icon { border-color: rgba(121, 87, 87, .55); color: var(--roast-deep); }
+.payment-option > i { border-color: var(--roast); }
+.payment-option:has(input:checked) > i { border-color: var(--roast-deep); }
+.checkout-demo-warning { color: var(--roast-deep); background: var(--paper-warm); }
+.form-error { color: #3B3030; background: #F4E4C5; }
+
+.site-footer { background: var(--roast-deep); color: var(--paper); }
+.site-footer .brand-mark { border-color: rgba(255, 240, 209, .55); }
+.site-footer .brand-mark svg { stroke: var(--paper); }
+.site-footer .brand-name, .footer-col > b, .footer-news > b { color: var(--paper); }
+.footer-brand > p, .footer-news p, .footer-col, .footer-bottom { color: var(--paper-warm); }
+.footer-news form { border-color: rgba(255, 240, 209, .45); }
+.footer-news input { color: var(--paper); }
+.footer-news button, .footer-sun { color: var(--paper-warm); }
+.footer-bottom { border-color: rgba(255, 240, 209, .3); }
+.drawer-scrim { background: rgba(59, 48, 48, .68); }
+.cart-drawer { background: var(--paper-light); }
+.toast-message { background: var(--roast-deep); color: var(--paper); }
+.toast-message > span { color: var(--paper-warm); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}

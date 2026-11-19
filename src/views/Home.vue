@@ -34,7 +34,7 @@ function goToOrigins() {
           <div class="hero-brand-note"><span><i></i> DISANGRAI DALAM BATCH KECIL</span><span>100% CERITA KOPI INDONESIA</span></div>
         </div>
         <div class="hero-brand-visual">
-          <img src="/assets/dharma-kintamani-coffee.svg" alt="Ilustrasi kemasan kopi Kintamani Citrus Dharma Boutique Roastery" fetchpriority="high" />
+          <img src="/img/coffee-5568374_1280.jpg" alt="Penggiling kopi, biji kopi, dan cangkir seduhan" fetchpriority="high" />
         </div>
       </div>
       <div class="hero-brand-footer"><span>MENEMUKAN YANG BAIK, DARI DEKAT.</span><a href="#origin">JELAJAHI ASAL KOPI <b>↓</b></a><span>ROASTED WITH CARE · INDONESIA</span></div>

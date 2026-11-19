@@ -2,13 +2,10 @@
 name: Dharma Boutique Roastery
 description: A local coffee storefront organized as a tasting scorecard and origin guide.
 colors:
-  forest: "#133a32"
-  forest-deep: "#0e2a25"
-  paper: "#f3ecdf"
-  paper-light: "#faf7ef"
-  coral: "#ec7352"
-  harvest-yellow: "#e9c864"
-  muted-green: "#718078"
+  roast-brown: "#795757"
+  roast-deep: "#664343"
+  espresso-ink: "#3b3030"
+  cream: "#fff0d1"
 typography:
   display:
     fontFamily: "Bodoni Moda, Georgia, serif"
@@ -63,20 +60,19 @@ The visual language borrows the useful order of a cupping sheet—labels, measur
 
 ## Colors
 
-The palette pairs forest greens with warm, mineral paper; coral calls attention to an action and yellow marks a tasting cue.
+The palette uses warm cream, roast brown, deep roast brown, and espresso ink throughout the storefront.
 
 ### Primary
-- **Deep Roastery Forest** (`#133a32`): The featured scorecard background and strongest brand surface.
-- **Roastery Ink** (`#0e2a25`): Footer and deepest text-bearing surfaces.
-- **Roast Coral** (`#ec7352`): Primary purchase action, selected accents, and small sensory highlights.
+- **Roast Brown** (`#795757`): Brand surfaces, primary actions, and selected accents.
+- **Deep Roast Brown** (`#664343`): Secondary emphasis and hover states.
+- **Espresso Ink** (`#3b3030`): Main text and deepest surfaces.
 
 ### Secondary
-- **Harvest Yellow** (`#e9c864`): Small tasting markers and emphasis against dark green.
-- **Muted Green** (`#718078`): Supporting labels and secondary information on paper surfaces.
+- **Roast Brown** (`#795757`): Supporting labels and secondary information on cream surfaces.
 
 ### Neutral
-- **Cupping Paper** (`#f3ecdf`): Main page background.
-- **Light Tasting Paper** (`#faf7ef`): Product, form, and card surfaces.
+- **Cream** (`#fff0d1`): Main page and hero background.
+- **Light cream tints** (`#fbf5e8`, `#f4e4c5`): Product, form, and card surfaces.
 
 ## Typography
 
